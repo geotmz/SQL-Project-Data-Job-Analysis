@@ -1,7 +1,7 @@
 # Introduction
 Focusing on data analyst roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
 # Backround
-Data hails from my SQL Course. It's packed with insights on job titles, salaries, locations, and essential skills.
+
 ### The questions I wanted to answer through my SQL queries were:
 1. What are the top-paying data analyst jobs?
 2. What skills are required for these top-paying jobs?
@@ -9,8 +9,6 @@ Data hails from my SQL Course. It's packed with insights on job titles, salaries
 4. Which skills are associated with higher salaries?
 5. What are the most optimal skills to learn?
 # Tools I Used
-For my deep dive into the data analyst job market, I harnessed the power of several key tools:
-
 - **SQL**: The backbone of my analysis, allowing me to query the database and unearth critical insights.
 - **PostgreSQL**: The chosen database management system, ideal for handling the job posting data.
 - **Visual Studio Code**: My go-to for database management and executing SQL queries.
@@ -69,7 +67,7 @@ Here's the breakdown of the most demanded skills for the top 10 highest paying d
 
 - **SQL** is leading with a bold count of 8.
 - **Python** follows closely with a bold count of 7.
-- **Tableau** is also highly sought after, with a bold count of 6. Other skills like R, Snowflake, Pandas, and Excel show varying degrees of demand.
+- **Tableau** is also highly sought after, with a bold count of 6. Other skills like **R**, **Snowflake**, **Pandas**, and **Excel** show varying degrees of demand.
 
   ![Top Data Analyst Jobs](https://github.com/user-attachments/assets/207a16a2-a111-4044-b0f8-9694d7a2fc21)
   *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
@@ -89,7 +87,7 @@ Here's the breakdown of the most demanded skills for the top 10 highest paying d
 Here's the breakdown of the most demanded skills for data analysts in 2023
 
 - **SQL** and **Excel** remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
-- Programming and Visualization Tools like **Python**, **Tableau**, and **Power BI** are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
+- **Programming and Visualization Tools** like **Python**, **Tableau**, and **Power BI** are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
 
 | Skill    | Demand Count |
 |----------|--------------|
@@ -99,10 +97,10 @@ Here's the breakdown of the most demanded skills for data analysts in 2023
 | Tableau  | 3745         |
 | Power BI | 2609         |
 
-  *Table of the demand for the top 5 skills in data analyst job postings*
+*Table of the demand for the top 5 skills in data analyst job postings*
 
  ### 4. Skills Based on Salary
- Exploring the average salaries associated with different skills revealed which skills are the highest paying.
+ Exploring the average salaries associated with different skills, revealed which skills are the highest paying.
 ```sql
 SELECT skills_dim.skills AS skill,
     ROUND(AVG(job_postings_fact.salary_year_avg), 2) AS avg_salary
@@ -182,11 +180,14 @@ Here's a breakdown of the most optimal skills for Data Analysts in 2023:
 - **Database Technologies**: The demand for skills in traditional and NoSQL databases (Oracle, SQL Server, NoSQL) with average salaries ranging from $97,786 to $104,534, reflects the enduring need for data storage, retrieval, and management expertise.
 
 # What I Learned
-Throughout this project, I've turbocharged my SQL toolkit with some serious firepower:
 
-🧩 Complex Query Crafting: Mastered the art of advanced SQL, merging tables like a pro and wielding WITH clauses for ninja-level temp table maneuvers.
-📊 Data Aggregation: Got cozy with GROUP BY and turned aggregate functions like COUNT() and AVG() into my data-summarizing sidekicks.
-💡 Analytical Wizardry: Leveled up my real-world puzzle-solving skills, turning questions into actionable, insightful SQL queries.
+🧩 Complex Query Crafting: Skilled in advanced SQL, combining tables and using temporary tables with WITH clauses effectively.
+
+📊 Data Aggregation: Familiar with GROUP BY and using aggregate functions like COUNT() and AVG() to summarize data.
+
+💡 Analytical Skills: Improved my ability to solve real-world problems by turning questions into clear and useful SQL queries.
+
+
 # Conclusions
 ### Insights
 From the analysis, several general insights emerged:
